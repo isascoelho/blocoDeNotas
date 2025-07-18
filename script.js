@@ -61,4 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Nota salva no localStorage!"); // Uma mensagem no console para fins de depuração.
     });
 
+    const btnPersonalizar = document.getElementById('btnPersonalizar');
+
+    btnPersonalizar.addEventListener('click', () => {
+        document.body.classList.toggle('pink-mood');
+        blocoDeNotas.classList.add('corBloco');
+    
+        console.log("Modo pink ativado/desativado!");
+    });
+
+
 });
